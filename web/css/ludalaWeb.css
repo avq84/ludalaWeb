@@ -1,0 +1,53 @@
+ul {
+    list-style-type: none;
+}
+.hidden{
+    display:none;
+}
+
+/*@media screen and (max-width: 480px) {*/
+@media only screen and (min-width : 320px) and (max-width : 480px){
+    body{
+        font-size: 225%;
+    }
+
+    .ui-tabs ul li{
+        width: 100%;
+    }
+    .ui-tabs ul li a{
+        width: 96%;
+    }
+
+    #newsFeedContainer, #techNewsFeedContainer, #entretainmentFeedContainer{
+        padding: 0;
+    }
+
+    .ui-tabs .ui-tabs-nav{
+        padding:0.2em;
+    }
+
+    #menuBtn{
+        width: 128px;
+        height: 128px;
+        background-image: url('../images/menuBtn128.png');
+    }
+
+    #tabs > ul {
+        position: absolute;
+        display:none;
+    }
+}
+
+@media screen and (min-width: 481px) {
+    body{
+        font-size: 100%;
+    }
+
+    #menuBtn{
+        display: none;
+    }
+
+    #tabs > ul {
+        display: block;
+    }
+}
